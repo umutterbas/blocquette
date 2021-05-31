@@ -1,0 +1,267 @@
+{	"contractName": "Blocquette",
+	"abi":[
+		{
+			"constant": false,
+			"inputs": [],
+			"name": "addEther",
+			"outputs": [],
+			"payable": true,
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [],
+			"name": "cashOut",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "uint8",
+					"name": "_number",
+					"type": "uint8"
+				},
+				{
+					"internalType": "uint8",
+					"name": "_betType",
+					"type": "uint8"
+				}
+			],
+			"name": "createBet",
+			"outputs": [],
+			"payable": true,
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [],
+			"name": "processoBeto",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"payable": true,
+			"stateMutability": "payable",
+			"type": "constructor"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "address",
+					"name": "betterAddress",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"internalType": "uint8",
+					"name": "betType",
+					"type": "uint8"
+				},
+				{
+					"indexed": false,
+					"internalType": "uint8",
+					"name": "number",
+					"type": "uint8"
+				},
+				{
+					"indexed": false,
+					"internalType": "uint256",
+					"name": "betAmount",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"internalType": "uint256",
+					"name": "profit",
+					"type": "uint256"
+				}
+			],
+			"name": "RandomBet",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "uint256",
+					"name": "number",
+					"type": "uint256"
+				}
+			],
+			"name": "RandomNumber",
+			"type": "event"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "betCount",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"name": "bets",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "betterAddress",
+					"type": "address"
+				},
+				{
+					"internalType": "uint8",
+					"name": "betType",
+					"type": "uint8"
+				},
+				{
+					"internalType": "uint8",
+					"name": "number",
+					"type": "uint8"
+				},
+				{
+					"internalType": "uint256",
+					"name": "betAmount",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "profit",
+					"type": "uint256"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "getAllBets",
+			"outputs": [
+				{
+					"components": [
+						{
+							"internalType": "address",
+							"name": "betterAddress",
+							"type": "address"
+						},
+						{
+							"internalType": "uint8",
+							"name": "betType",
+							"type": "uint8"
+						},
+						{
+							"internalType": "uint8",
+							"name": "number",
+							"type": "uint8"
+						},
+						{
+							"internalType": "uint256",
+							"name": "betAmount",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "profit",
+							"type": "uint256"
+						}
+					],
+					"internalType": "struct Blocquette.Bet[]",
+					"name": "",
+					"type": "tuple[]"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "getStatus",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "name",
+			"outputs": [
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "rand",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		}
+	],
+"networks": {
+    "3":{
+        "events":{},
+        "links":{},
+        "address":"0x88DaC7F615A408400adcE2abeC078D0e8C58167B",
+        "transactionHash":"0x885983d01416592bec93cf3c8d4d947aa8324b66dbf7fe57976280abbdb5c8e6"
+    }
+}}
