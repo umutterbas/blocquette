@@ -1,7 +1,8 @@
 pragma solidity ^0.5.0;
 
 contract Blocquette{
-    address payable creator;
+  
+  address payable creator;
 	string public name;
 	uint public betCount = 0;
 	uint8[] payouts;
@@ -26,7 +27,7 @@ contract Blocquette{
         block.number
     )));
 
-    return ((seed - ((seed / 1000) * 1000))%38);
+    return ((seed - ((seed / 1000) * 1000))%37);
 }
 
 
@@ -41,6 +42,7 @@ contract Blocquette{
 
 
 	constructor() public payable{
+    creator = msg.sender;
 		name = "UKB Blocquette";
 		payouts = [36,2,2];
 		numberRange = [36,1,1];
